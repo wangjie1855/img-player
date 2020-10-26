@@ -142,7 +142,7 @@ class SlowTransition extends Component {
                 return (
                   <div className="swiper-slide" key={`swiper${index}`}>
 
-                    <div className="title">{item}</div>
+                    <div className="title">{`作品${index}`}</div>
                     <img
                       data-src={item}
                       className="swiper-lazy"
