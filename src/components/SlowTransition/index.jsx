@@ -147,7 +147,6 @@ class SlowTransition extends Component {
                       data-src={item}
                       className="swiper-lazy"
                       alt="{图片}"
-
                     >
                     </img>
 
