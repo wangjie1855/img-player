@@ -2,17 +2,18 @@ import React, { Component } from 'react'
 import SlowTransition from './components/SlowTransition'
 
 let List = [
-  // require("../src/assets/imgs/picture-1.jpg"),
-  'pic/picture-1.jpg',
-  'pic/picture-2.jpg',
-  'pic/picture-3.jpg',
-  'pic/picture-4.jpg',
-  'pic/picture-5.jpg',
-  'pic/picture-6.jpg',
-  'pic/picture-7.jpg',
-  'pic/picture-8.jpg',
-  'pic/picture-9.jpg',
-  'pic/picture-10.jpg',
+  require("../src/assets/imgs/picture-1.jpg"),
+  require("../src/assets/imgs/picture-2.jpg"),
+  require("../src/assets/imgs/picture-3.jpg"),
+  require("../src/assets/imgs/picture-4.jpg"),
+  require("../src/assets/imgs/picture-5.jpg"),
+  require("../src/assets/imgs/picture-6.jpg"),
+  // 'pic/picture-1.jpg',
+  // 'pic/picture-2.jpg',
+  // 'pic/picture-3.jpg',
+  // 'pic/picture-4.jpg',
+  // 'pic/picture-5.jpg',
+  // 'pic/picture-6.jpg',
 ]
 
 export default class App extends Component {
