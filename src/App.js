@@ -94,48 +94,48 @@ export default class App extends Component {
 
   }
 
-  componentDidMount() {
-    axios
-      // .post(window.location.protocol + '//' + window.location.host + '/api/',
-      .post('http://8090.qzcqt.com/user/login',
-        qs.stringify({
-          mobile: 15869109699,
-          password: 'test',
-        }), {
-        headers: {
-          // Authorization: 'Basic ' + btoa('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET),
-          // 'Content-Type': 'application/json',
-          'Accept': 'application/json,text/plain,*/*',/* 格式限制：json、文本、其他格式 */
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-      })
-      .then((response) => {
-        // console.log('sendPost=>res', response);
-        if (response.status === 200) {
-          console.log('sendPost=>res', response.data);
-          // this.setState({
-          //   List: response.data.path,
-          // }
-          // ,()=>{
-          //   this.setState({
-          //     setNumFlag: false,
-          //     jumpFlag: true,
-          //   });
-          // }
-          // );
-        }
-      })
-      .catch((response) => {
-        // console.log('sendPost=>catch', response);
-        var error = Object.assign({}, response);
-        // if (error.response.status === 409) {
-        //   // resolve('返回的值');
-        // } else {
-        console.log('sendPost=>catch', error);
-        //   console.warn('No login connection to Server. This may be a certificate error');
-        // }
-      });
-  }
+  // componentDidMount() {
+  //   axios
+  //     // .post(window.location.protocol + '//' + window.location.host + '/api/',
+  //     .post('http://8090.qzcqt.com/user/login',
+  //       qs.stringify({
+  //         mobile: 15869109699,
+  //         password: 'test',
+  //       }), {
+  //       headers: {
+  //         // Authorization: 'Basic ' + btoa('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET),
+  //         // 'Content-Type': 'application/json',
+  //         'Accept': 'application/json,text/plain,*/*',/* 格式限制：json、文本、其他格式 */
+  //         'Content-Type': 'application/x-www-form-urlencoded',
+  //       },
+  //     })
+  //     .then((response) => {
+  //       // console.log('sendPost=>res', response);
+  //       if (response.status === 200) {
+  //         console.log('sendPost=>res', response.data);
+  //         // this.setState({
+  //         //   List: response.data.path,
+  //         // }
+  //         // ,()=>{
+  //         //   this.setState({
+  //         //     setNumFlag: false,
+  //         //     jumpFlag: true,
+  //         //   });
+  //         // }
+  //         // );
+  //       }
+  //     })
+  //     .catch((response) => {
+  //       // console.log('sendPost=>catch', response);
+  //       var error = Object.assign({}, response);
+  //       // if (error.response.status === 409) {
+  //       //   // resolve('返回的值');
+  //       // } else {
+  //       console.log('sendPost=>catch', error);
+  //       //   console.warn('No login connection to Server. This may be a certificate error');
+  //       // }
+  //     });
+  // }
 
   componentWillUnmount() {
     // console.log('componentWillUnmount');
