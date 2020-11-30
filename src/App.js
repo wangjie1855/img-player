@@ -157,7 +157,7 @@ export default class App extends Component {
                 />
               </p>
               <p>
-                显示几张图片[1,20]：<input type="number" name="picNum" min="1" max="20"
+                {'显示几张图片(新)[1,20]：'}<input type="number" name="picNum" min="1" max="20"
                   value={this.state.picnum} onChange={this.handleChangePicNum}
                 // required
                 />
